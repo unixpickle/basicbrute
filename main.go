@@ -60,6 +60,7 @@ func main() {
 }
 
 func readPasswords() []string {
+	fmt.Println("Reading passwords from stdin...")
 	data, err := ioutil.ReadAll(os.Stdin)
 	essentials.Must(err)
 	var res []string
